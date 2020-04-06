@@ -13,11 +13,11 @@ body {
 .wrap {
 	width: 100%;
 	height: 100%;
-	padding: 0% 5%;
+	padding: 3% 5%;
 	position: fixed;
 	opacity: 0.8;
-	background: linear-gradient(to bottom right, #000000, #656565);
-	background: -webkit-linear-gradient(to bottom right, #50a3a2, #53e3a6);
+	background: linear-gradient(to bottom right,  #50a3a2, #53e3a6);
+	background: -webkit-linear-gradient(to bottom right,#50a3a2,#53e3a6);
 }
 
 .container {
@@ -92,6 +92,7 @@ body {
 	width: 15px;
 	height: 15px;
 	z-index: -8;
+	border-radius: 20%;
 	background-color: rgba(255, 255, 255, 0.15);
 	animotion: square 25s infinite;
 	-webkit-animation: square 25s infinite;
@@ -209,7 +210,7 @@ body {
 	transform: translateY(0)
 	}
     100% {
-    bottom: 400px;
+    bottom: 100%;
     transform: rotate(600deg);
     -webit-transform: rotate(600deg);
     -webkit-transform: translateY(-500);
@@ -222,7 +223,7 @@ body {
 	transform: translateY(0)
 	}
 	100% {
-	bottom: 400px;
+	bottom: 100%;
 	transform: rotate(600deg);
 	-webit-transform: rotate(600deg);
 	-webkit-transform: translateY(-500);

@@ -1,9 +1,8 @@
 /**
  * 
  */
-$(document).ready(function() {  
 	function checkData() {
-    	var userName = document.getElementById("username");
+    	var username = document.getElementById("username");
     	if (username.value.length==0){
     		alert("用户名不能为空");
     		return false;
@@ -25,4 +24,3 @@ $(document).ready(function() {
         }
         return true;
     }
-});

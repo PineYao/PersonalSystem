@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
   <display-name>PersonalSystem</display-name>
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
+  
+  
+  <servlet>
+    <servlet-name>LoginAction</servlet-name>
+    <servlet-class>com.Controler.LoginAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginAction</servlet-name>
+    <url-pattern>/LoginAction</url-pattern>
+  </servlet-mapping>
+  <servlet>
+		<servlet-name>UserRegAction</servlet-name>
+		<servlet-class>com.Controler.UserRegAction</servlet-class>
+	</servlet>
+  <servlet-mapping>
+		<servlet-name>UserRegAction</servlet-name>
+		<url-pattern>/UserRegAction</url-pattern>
+	</servlet-mapping>
+	<servlet>
+    <servlet-name>BookLimitPage</servlet-name>
+    <servlet-class>com.Controler.BookLimitPage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BookLimitPage</servlet-name>
+    <url-pattern>/BookLimitPage</url-pattern>
+  </servlet-mapping>
+  
+ 
 </web-app>
