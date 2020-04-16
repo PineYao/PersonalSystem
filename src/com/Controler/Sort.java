@@ -17,10 +17,10 @@ import java.util.ArrayList;
 import com.Dao.BaseDao;
 import com.entity.Books;
 /**
- * 图书分页显示
+ * 分类查看
  *
  */
-public class BookLimitPage extends HttpServlet {
+public class Sort extends HttpServlet {
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html; charset=utf-8");
@@ -32,8 +32,16 @@ public class BookLimitPage extends HttpServlet {
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// 查询数据库里面数据的总条数
 		// 1.数据库里面数据的总条数；
+		String tag=request.getParameter("Tag");
+		int tag1=1;
+		if (tag == null || tag == "") {
+			tag1 = 1;
+		}
+		else {
+			tag1=Integer.parseInt(tag);
+		}
 		int countpage = 0;
-		String sql0 = "select * from book_info";
+		String sql0 = "select * from book_info where tag='"+ tag1 + "'";
 		Connection conn = null;
 		PreparedStatement ps = null;
 		ResultSet rs = null;
@@ -84,7 +92,7 @@ public class BookLimitPage extends HttpServlet {
 			limt = countpage - start;
 		}
 		// sql语句的意思就是limit 索引,显示索引以后多少行
-		String sql = "select * from book_info limit ?,?";
+		String sql = "select * from book_info where tag='"+ tag1 + "' limit ?,?";
 		ArrayList<Books> list = new ArrayList<Books>();
 		try {
 			conn1 = db.getCon();
@@ -103,10 +111,12 @@ public class BookLimitPage extends HttpServlet {
 		} finally {
 			db.closeAll(conn1, ps1, rs1);
 		}
+		request.getSession().setAttribute("Tag",tag1);
 		request.setAttribute("list", list);
 		request.setAttribute("cpage", cpage);
 		request.setAttribute("all", all);
-		request.setAttribute("address", "/PersonalSystem/BookLimitPage");
-		request.getRequestDispatcher("home.jsp").forward(request, response);
+		request.setAttribute("address", "/PersonalSystem/Sort");
+		request.getRequestDispatcher("sort.jsp").forward(request, response);
 	}
 }
+

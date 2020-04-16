@@ -1,7 +1,7 @@
 package com.entity;
 
-public class Books {
-	private int id;
+public class BookInfo {
+	private int book_id;
 	private String book_name;
 	private String author;
 	private String publisher;
@@ -10,14 +10,15 @@ public class Books {
 	private String img_src;
 	private String book_intro;
 	private String author_intro;
-	private int book_score;
-	private float book_comments;
+	private float book_score;
+	private int book_comments;
 	private String label;
-	public int getId() {
-		return id;
+	
+	public int getBook_id() {
+		return book_id;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public void setBook_id(int book_id) {
+		this.book_id = book_id;
 	}
 	public String getBook_name() {
 		return book_name;
@@ -67,16 +68,17 @@ public class Books {
 	public void setAuthor_intro(String author_intro) {
 		this.author_intro = author_intro;
 	}
-	public int getBook_score() {
+	
+	public float getBook_score() {
 		return book_score;
 	}
-	public void setBook_score(int book_score) {
+	public void setBook_score(float book_score) {
 		this.book_score = book_score;
 	}
-	public float getBook_comments() {
+	public int getBook_comments() {
 		return book_comments;
 	}
-	public void setBook_comments(float book_comments) {
+	public void setBook_comments(int book_comments) {
 		this.book_comments = book_comments;
 	}
 	public String getLabel() {
@@ -85,15 +87,25 @@ public class Books {
 	public void setLabel(String label) {
 		this.label = label;
 	}
-	public Books() {
+	public BookInfo() {
 		super();
 	}
-	public Books(String img_src,String book_name,String author,String publisher) {
+	public BookInfo(int book_id,String book_name,String author,String publisher,String ISBN,String publish_time,String img_src,String book_intro,String author_intro,float book_score,int book_comments,String label) {
         super();
-        this.img_src=img_src;
-        this.book_name = book_name;
+        this.book_id=book_id;
+        this.book_name=book_name;
         this.author=author;
-        this.publisher = publisher;
+        
+        this.publisher=publisher;
+        this.publish_time=publish_time;
+        this.ISBN=ISBN;
+        this.img_src=img_src;
+        this.book_intro=book_intro;
+        this.author_intro=author_intro;
+        this.book_score=book_score;
+        this.book_comments=book_comments;
+        this.label=label;
+        
     }
 	
 }

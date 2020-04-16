@@ -16,7 +16,7 @@ body {
 	padding: 3% 5%;
 	position: fixed;
 	opacity: 0.8;
-	background: linear-gradient(to bottom right,  #50a3a2, #53e3a6);
+	background: linear-gradient(to bottom right, #50a3a2, #53e3a6);
 	background: -webkit-linear-gradient(to bottom right,#50a3a2,#53e3a6);
 }
 
@@ -65,10 +65,6 @@ body {
 .container input[type='submit']:hover {
 	cursor: pointer;
 	width: 400px;
-}
-
-.to_login {
-	color: #a7c4c9;
 }
 
 .text {

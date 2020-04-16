@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.Dao.UserDao;
 
 /**
- * 会员注册
+ * 用户注册
  *
  */
 public class UserRegAction extends HttpServlet {
@@ -77,7 +77,7 @@ public class UserRegAction extends HttpServlet {
 					e.printStackTrace();
 				}
 			}
-			out.println("<script>alert('用户注册成功！');window.location.href='/index.jsp'</script>");
+			out.println("<script>alert('用户注册成功！');window.location.href='http://localhost:8080/PersonalSystem/index.jsp'</script>");
 		}
 
 		out.flush();

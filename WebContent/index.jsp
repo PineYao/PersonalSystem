@@ -3,15 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 
-<html lang="en">
-  	<script src="js/jquery.min.js"></script>  
-	<link href="css/bootstrap.css" rel="stylesheet" />  
-	<script src="js/bootstrap.min.js"></script>  
-	  
-	<link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" />  
-	<script src="js/moment-with-locales.min.js"></script>  
-	<script src="js/bootstrap-datetimepicker.min.js"></script>  
-
+<html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,17 +16,19 @@
     <title>个性化图书管理系统</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link  type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link type="text/css" href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/dashboard.css" rel="stylesheet">
+    <link type="text/css" href="css/dashboard.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="js/ie-emulation-modes-warning.js"></script>
+    
+    <script src="js/index.js"></script>
   </head>
 
 
@@ -60,11 +54,12 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
+          <li><a href="" onclick="getkey(this)" target="rightframe">搜索</a></li>
             <li><a href=<%=loginhref %>><%=loginin%></a></li>
             <li><a href="register.jsp">注册</a></li>
           </ul>
           <form class="navbar-form navbar-right">
-            <input type="text" class="form-control" placeholder="Search...">
+            <input id="search"type="text" class="form-control" placeholder="Search...">
           </form>
         </div>
       </div>
@@ -88,9 +83,9 @@
           </div>
           
           <ul class="nav nav-sidebar">
-            <li class="active" ><a href="http://localhost:8080/PersonalSystem/BookLimitPage"target="rightframe">首页</a></li>
-            <li><a href="webuploader/examples/image-upload/picture.html" target="rightframe">分类</a></li>
-            <li><a href="webuploader/examples/cropper/cropper.html" target="rightframe">排行榜</a></li>
+            <li><a href="http://localhost:8080/PersonalSystem/BookLimitPage"target="rightframe">首页</a></li>
+            <li><a href="http://localhost:8080/PersonalSystem/Sort?Tag=1" target="rightframe">分类</a></li>
+            <li><a href="http://localhost:8080/PersonalSystem/LeaderBoard" target="rightframe">排行榜</a></li>
             <li><a href="fileadd.jsp" target="rightframe">推荐</a></li>
           </ul>
         </div>

@@ -5,10 +5,13 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
+/**
+ * 链接数据库
+ *
+ */
 public class BaseDao {
     private String driver="com.mysql.jdbc.Driver";
-    private String url="jdbc:mysql://localhost:3306/system_db?useUnicode=true&characterEncoding=UTF-8";
+    private String url="jdbc:mysql://localhost:3306/system_db?useUnicode=true&characterEncoding=UTF-8&characterSetResults=UTF-8&zeroDateTimeBehavior=convertToNull";
     private String name="root";
     private String pwd="root";
 

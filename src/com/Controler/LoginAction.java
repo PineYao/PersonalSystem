@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.Dao.UserDao;
 
 /**
- * 用户后台登录操作
+ * 用户登录
  *
  */
 public class LoginAction extends HttpServlet {
@@ -44,7 +44,7 @@ public class LoginAction extends HttpServlet {
 		if(login){
 		   
 		   request.getSession().setAttribute("username",usercount);
-		   response.sendRedirect("/index.jsp");
+		   response.sendRedirect("http://localhost:8080/PersonalSystem/index.jsp");
 			
 		}else{
 			 

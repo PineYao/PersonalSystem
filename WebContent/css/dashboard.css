@@ -59,10 +59,9 @@ body {
   padding-right: 20px;
   padding-left: 20px;
 }
-.nav-sidebar > .active > a,
-.nav-sidebar > .active > a:hover,
-.nav-sidebar > .active > a:focus {
-  color: #fff;
+.nav-sidebar >  a,
+.nav-sidebar >  a:hover,
+.nav-sidebar > a:focus {
   background-color: #428bca;
 }
 

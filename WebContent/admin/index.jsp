@@ -33,33 +33,33 @@ String path = request.getContextPath();
                     <a class="one">用户管理</a>
                     <ul class="kid">
                         <ul class="kid">
-                        <li><b class="tip"></b><a target="Conframe" href="<%=path %>/admin/admin/list.jsp">用户信息管理</a></li>
+                        <li><b class="tip"></b><a target="Conframe" href="http://localhost:8080/PersonalSystem/UserSearch">用户信息管理</a></li>
                     </ul>
                     </ul>
                 </div>
                 <div>
-                    <a class="one">会员管理</a>
+                    <a class="one">管理员管理</a>
                     <ul class="kid">
-                        <li><b class="tip"></b><a target="Conframe" href="<%=path %>/admin/user/list.jsp">会员信息维护</a></li>  
+                        <li><b class="tip"></b><a target="Conframe" href="http://localhost:8080/PersonalSystem/AdminSearch">管理员信息维护</a></li>  
                     </ul>
                 </div>
                 <div>
                     <a class="one">图书管理</a>
                     <ul class="kid">
-                        <li><b class="tip"></b><a target="Conframe" href="<%=path %>/admin/car/list.jsp">图书信息管理</a></li>
+                        <li><b class="tip"></b><a target="Conframe" href="http://localhost:8080/PersonalSystem/BookSearch">图书信息管理</a></li>
                     </ul>
                 </div>
                 <div>
                     <a class="one">评论管理</a>
                     <ul class="kid">
-                        <li><b class="tip"></b><a target="Conframe" href="<%=path %>/admin/yundan/list.jsp">评论管理</a></li>
+                        <li><b class="tip"></b><a target="Conframe" href="http://localhost:8080/PersonalSystem/CommentSearch">评论管理</a></li>
  
                     </ul>
                 </div>
                  <div>
                     <a class="one">评分管理</a>
                     <ul class="kid">
-                        <li><b class="tip"></b><a target="Conframe" href="<%=path %>/admin/qian/list.jsp">评分查看</a></li>
+                        <li><b class="tip"></b><a target="Conframe" href="http://localhost:8080/PersonalSystem/ScoreSearch">评分查看</a></li>
                        
                     </ul>
                 </div>

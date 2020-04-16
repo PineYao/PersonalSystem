@@ -8,7 +8,6 @@
 <link rel="stylesheet" type="text/css" href="css/register.css">
 <script type="text/javascript" src="js/register.js"></script>
 
-<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 <link rel="icon" href="img/Library.ico">
 </head>
 <body>
@@ -40,17 +39,7 @@
 		</div>
 		   
 		<ul>
-			       
-			<li></li>        
-			<li></li>        
-			<li></li>        
-			<li></li>        
-			<li></li>        
-			<li></li>        
-			<li></li>        
-			<li></li>        
-			<li></li>        
-			<li></li>    
+			<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
 		</ul>
 	</div>
 </body>

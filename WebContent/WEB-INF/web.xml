@@ -3,36 +3,214 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
 	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
-  <display-name>PersonalSystem</display-name>
-  <welcome-file-list>
-    <welcome-file>index.jsp</welcome-file>
-  </welcome-file-list>
-  
-  
-  <servlet>
-    <servlet-name>LoginAction</servlet-name>
-    <servlet-class>com.Controler.LoginAction</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>LoginAction</servlet-name>
-    <url-pattern>/LoginAction</url-pattern>
-  </servlet-mapping>
-  <servlet>
+	<display-name>PersonalSystem</display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	
+	<servlet>
+		<servlet-name>LoginAction</servlet-name>
+		<servlet-class>com.Controler.LoginAction</servlet-class>
+	</servlet> 
+	
+	<servlet-mapping>
+		<servlet-name>LoginAction</servlet-name>
+		<url-pattern>/LoginAction</url-pattern>
+	</servlet-mapping>
+	<servlet>
 		<servlet-name>UserRegAction</servlet-name>
 		<servlet-class>com.Controler.UserRegAction</servlet-class>
 	</servlet>
-  <servlet-mapping>
+	<servlet-mapping>
 		<servlet-name>UserRegAction</servlet-name>
 		<url-pattern>/UserRegAction</url-pattern>
 	</servlet-mapping>
 	<servlet>
-    <servlet-name>BookLimitPage</servlet-name>
-    <servlet-class>com.Controler.BookLimitPage</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>BookLimitPage</servlet-name>
-    <url-pattern>/BookLimitPage</url-pattern>
-  </servlet-mapping>
-  
- 
+		<servlet-name>BookLimitPage</servlet-name>
+		<servlet-class>com.Controler.BookLimitPage</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BookLimitPage</servlet-name>
+		<url-pattern>/BookLimitPage</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Sort</servlet-name>
+		<servlet-class>com.Controler.Sort</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Sort</servlet-name>
+		<url-pattern>/Sort</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>LeaderBoard</servlet-name>
+		<servlet-class>com.Controler.LeaderBoard</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LeaderBoard</servlet-name>
+		<url-pattern>/LeaderBoard</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Search</servlet-name>
+		<servlet-class>com.Controler.Search</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Search</servlet-name>
+		<url-pattern>/Search</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UserSearch</servlet-name>
+		<servlet-class>com.Controler.Back.UserSearch</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserSearch</servlet-name>
+		<url-pattern>/UserSearch</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DelUserAction</servlet-name>
+		<servlet-class>com.Controler.Back.DelUserAction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DelUserAction</servlet-name>
+		<url-pattern>/DelUserAction</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>AddUserAction</servlet-name>
+		<servlet-class>com.Controler.Back.AddUserAction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddUserAction</servlet-name>
+		<url-pattern>/AddUserAction</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ModUserAction</servlet-name>
+		<servlet-class>com.Controler.Back.ModUserAction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ModUserAction</servlet-name>
+		<url-pattern>/ModUserAction</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>UserSearchOne</servlet-name>
+		<servlet-class>com.Controler.Back.UserSearchOne</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserSearchOne</servlet-name>
+		<url-pattern>/UserSearchOne</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AdminSearch</servlet-name>
+		<servlet-class>com.Controler.Back.AdminSearch</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminSearch</servlet-name>
+		<url-pattern>/AdminSearch</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>DelAdminAction</servlet-name>
+		<servlet-class>com.Controler.Back.DelAdminAction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DelAdminAction</servlet-name>
+		<url-pattern>/DelAdminAction</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>BookSearch</servlet-name>
+		<servlet-class>com.Controler.Back.BookSearch</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BookSearch</servlet-name>
+		<url-pattern>/BookSearch</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddBookAction</servlet-name>
+		<servlet-class>com.Controler.Back.AddBookAction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddBookAction</servlet-name>
+		<url-pattern>/AddBookAction</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DelBookAction</servlet-name>
+		<servlet-class>com.Controler.Back.DelBookAction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DelBookAction</servlet-name>
+		<url-pattern>/DelBookAction</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ModBookAction</servlet-name>
+		<servlet-class>com.Controler.Back.ModBookAction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ModBookAction</servlet-name>
+		<url-pattern>/ModBookAction</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>BookSearchOne</servlet-name>
+		<servlet-class>com.Controler.Back.BookSearchOne</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BookSearchOne</servlet-name>
+		<url-pattern>/BookSearchOne</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>CommentSearch</servlet-name>
+		<servlet-class>com.Controler.Back.CommentSearch</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CommentSearch</servlet-name>
+		<url-pattern>/CommentSearch</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DelCommentAction</servlet-name>
+		<servlet-class>com.Controler.Back.DelCommentAction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DelCommentAction</servlet-name>
+		<url-pattern>/DelCommentAction</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>ScoreSearch</servlet-name>
+		<servlet-class>com.Controler.Back.ScoreSearch</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ScoreSearch</servlet-name>
+		<url-pattern>/ScoreSearch</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>DelScoreAction</servlet-name>
+		<servlet-class>com.Controler.Back.DelScoreAction</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DelScoreAction</servlet-name>
+		<url-pattern>/DelScoreAction</url-pattern>
+	</servlet-mapping>
+	
 </web-app>

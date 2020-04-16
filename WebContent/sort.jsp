@@ -8,13 +8,19 @@
 <head>
 	<title>个性化图书推荐系统</title>
 	<meta name="referrer" content="no-referrer"/>
-	<link rel="stylesheet" type="text/css" href="css/home.css"/>
 </head>
 
 <body>
-	<jsp:include flush="true" page="/top.jsp"></jsp:include>
-	<br>
-	<br>
+	<div>
+	 <a class="active" href="http://localhost:8080/PersonalSystem/Sort?Tag=8" target="rightframe">小说</a>
+     <a href="http://localhost:8080/PersonalSystem/Sort?Tag=7" target="rightframe">漫画</a>
+     <a href="http://localhost:8080/PersonalSystem/Sort?Tag=6" target="rightframe">历史</a>
+      <a href="http://localhost:8080/PersonalSystem/Sort?Tag=1" target="rightframe">国学</a>
+      <a href="http://localhost:8080/PersonalSystem/Sort?Tag=3" target="rightframe">教育</a>
+        <a href="http://localhost:8080/PersonalSystem/Sort?Tag=5" target="rightframe">科普</a>
+       <a href="http://localhost:8080/PersonalSystem/Sort?Tag=4" target="rightframe">经济学</a>
+         <a href="http://localhost:8080/PersonalSystem/Sort?Tag=2" target="rightframe">互联网</a>
+	</div>
 	<table class="table table-striped" style='margin: 0px auto;' width="800px">
 		<tbody>
 			<tr>
@@ -42,10 +48,10 @@
 		<tbody >
 			<tr>
 				<td><a
-					href="<%=request.getAttribute("address") %>?currentpage=${cpage-1}"><img height="16" width="41" src="img/pre.gif" /></a></td>
+					href="<%=request.getAttribute("address") %>?Tag=${sessionScope.Tag}&&currentpage=${cpage-1}"><img height="16" width="41" src="img/pre.gif" /></a></td>
 				<td>第${cpage}页</td>
 				<td><a
-					href="<%=request.getAttribute("address") %>?currentpage=${cpage+1}"><img height="16" width="41" src="img/next.gif" /></a></td>
+					href="<%=request.getAttribute("address") %>?Tag=${sessionScope.Tag}&&currentpage=${cpage+1}"><img height="16" width="41" src="img/next.gif" /></a></td>
 				<td>总共<%=request.getAttribute("all")%>页
 				</td>
 			</tr>
